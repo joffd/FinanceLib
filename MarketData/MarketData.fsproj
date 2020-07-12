@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="MarketDataTypes.fs" />
+    <Compile Include="Common.fs" />
+    <Compile Include="Rates.fs" />
+    <Compile Include="Dividends\IDividends.fs" />
+    <Compile Include="InterestRate\IInterestRate.fs" />
+    <Compile Include="RepoRate\IRepoRate.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tools\Tools.fsproj" />
+    <ProjectReference Include="..\Underlyings\Underlying.fsproj" />
+  </ItemGroup>
+
+</Project>

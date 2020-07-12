@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="ISecurity.fs" />
+    <Compile Include="Index\Expiry.fs" />
+    <Compile Include="Index\Multiplier.fs" />
+    <Compile Include="Index\F.fs" />
+    <Compile Include="SecurityType.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MarketData\MarketData.fsproj" />
+    <ProjectReference Include="..\Tools\Tools.fsproj" />
+    <ProjectReference Include="..\Underlyings\Underlying.fsproj" />
+  </ItemGroup>
+
+</Project>
