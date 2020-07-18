@@ -11,7 +11,7 @@ open FinanceLib.PricingEngine
 module IHolding =
 
     type IHolding =
-        abstract member Security: ISecurity
+        abstract member Security: Security
         abstract member MarketDataEnv: MarketDataEnv
         abstract member PricingEngine: IPricingEngine
         abstract member FxPair: FxPair

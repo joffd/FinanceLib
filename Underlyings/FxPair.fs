@@ -19,7 +19,7 @@ module FxPair =
 
     type QuoteDelivery = Currency * bool
 
-    let createFxPair (b: Currency) (q: Currency) (del: bool) =
+    let createFxPair (del: bool) (b: Currency) (q: Currency) =
         {
             Base = b
             Quote = q

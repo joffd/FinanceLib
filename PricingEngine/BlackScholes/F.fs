@@ -16,15 +16,17 @@ module F =
 
 
     type BlackScholesF (f: F, div: Dividends, ir: InterestRate, repo: RepoRate) =
+        let fair = calcFairValue f
+        
         interface IPricingF with
             member _.Name = "Black Scholes - Listed Future"
             member _.F = f
             member _.Div = div
             member _.IR = ir
             member _.Repo = repo
-            member _.Fair = calcFairValue f, (f :> ISecurity).Currency
+            member _.Fair = fair, (f :> ISecurity).Currency
             member _.Delta(qty) = if qty >= 0. then 1. else 0.
-            member _.DeltaLC qty = x.Fair, (f :> ISecurity).Currency
+            member _.DeltaLC qty = fair, (f :> ISecurity).Currency
             //member __.SecurityType = SecurityType.F
 
 

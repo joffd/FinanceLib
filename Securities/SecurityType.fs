@@ -2,10 +2,10 @@
 
 
 open System
-
+open FinanceLib.Security.Index
 
 [<AutoOpen>]
 module SecurityType =
     
-    type SecurityTypeAccepted =
-        | IndexFuture of Index.F.F
+    type Security =
+        | F of F
