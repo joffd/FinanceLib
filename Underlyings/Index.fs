@@ -18,6 +18,6 @@ module Index =
         Exchange: Exchange
         Currency: Currency
         Calendar: Set<DateTime>
-        StandardMultiplier: int
+        StandardMultiplier: float
     }
 
