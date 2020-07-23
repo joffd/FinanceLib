@@ -21,6 +21,6 @@ module NormalDistribution =
         | New (m, s) -> normDist m s
         | Existing nd -> nd
 
+    let density (nd: NormalDist) = (getNormDist nd).Density
 
-    let cnd (nd: NormalDist) x =
-        (getNormDist nd).CumulativeDistribution x
+    let cnd (nd: NormalDist) = (getNormDist nd).CumulativeDistribution

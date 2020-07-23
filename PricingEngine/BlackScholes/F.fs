@@ -26,4 +26,4 @@ module F =
             member _.Fair = fair, (f :> ISecurity).Currency
             member _.Delta(qty) = if qty >= 0. then 1. else 0.
             member _.DeltaLC qty = fair, (f :> ISecurity).Currency
-//member __.SecurityType = SecurityType.F
+
