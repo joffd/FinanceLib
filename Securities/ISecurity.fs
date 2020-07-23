@@ -7,16 +7,10 @@ open FinanceLib.MarketData
 
 [<AutoOpen>]
 module ISecurity =
-    
-    
+
+
 
     type ISecurity =
-        abstract member Underlying: Underlying
-        abstract member MarketDataRequired: Set<MarketDataNeeded>
-        abstract member Currency: Currency
-        
-       
-
-
-
-
+        abstract Underlying: Underlying
+        abstract MarketDataRequired: Set<MarketDataNeeded>
+        abstract Currency: Currency

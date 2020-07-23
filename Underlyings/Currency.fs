@@ -10,4 +10,3 @@ module Currency =
         | EUR
         | AUD
         | JPY
-

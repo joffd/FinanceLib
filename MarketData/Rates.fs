@@ -4,12 +4,8 @@
 module Rates =
 
     type CompoundedFreq =
-    | Continuous
-    | SemiAnnual
-    | Quaterly
-    | Monthly
-    | Custom of float
-
-
-    
-
+        | Continuous
+        | SemiAnnual
+        | Quaterly
+        | Monthly
+        | Custom of float

@@ -10,6 +10,7 @@ module UnderlyingTypes =
         | Currency of Currency
         | Index of Index
 
-    let getCurrency = function
+    let getCurrency =
+        function
         | Currency c -> c
         | Index i -> i.Currency

@@ -7,17 +7,14 @@ open FinanceLib.Underlying
 [<AutoOpen>]
 module Index =
 
-    type IndexName = {
-        FullName: string
-        BBG: string
-        Reuters: string
-    }
+    type IndexName =
+        { FullName: string
+          BBG: string
+          Reuters: string }
 
-    type Index = {
-        Name: IndexName
-        Exchange: Exchange
-        Currency: Currency
-        Calendar: Set<DateTime>
-        StandardMultiplier: float
-    }
-
+    type Index =
+        { Name: IndexName
+          Exchange: Exchange
+          Currency: Currency
+          Calendar: Set<DateTime>
+          StandardMultiplier: float }

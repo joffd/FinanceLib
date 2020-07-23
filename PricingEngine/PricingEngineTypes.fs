@@ -16,17 +16,16 @@ module PricingEngineTypes =
         | Gamma of Currency option
 
     type IPricingEngine =
-        abstract member Name: string
-        abstract member Fair: float * Currency
-        abstract member Delta: float -> float
-        abstract member DeltaLC: float -> float * Currency
-        //abstract member SecurityType: SecurityType
+        abstract Name: string
+        abstract Fair: float * Currency
+        abstract Delta: float -> float
+        abstract DeltaLC: float -> float * Currency
+    //abstract member SecurityType: SecurityType
 
-    
+
     type IPricingF =
         inherit IPricingEngine
-        abstract member F: F 
-        abstract member Div: Dividends
-        abstract member IR: InterestRate
-        abstract member Repo: RepoRate
-        
+        abstract F: F
+        abstract Div: Dividends
+        abstract IR: InterestRate
+        abstract Repo: RepoRate

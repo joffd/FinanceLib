@@ -9,17 +9,17 @@ module IDividends =
 
     //let fromDivPtsToDiscountedDivPts (ir: InterestRate) (divPts: DateTime -> DateTime -> float)
     type DividendFormat =
-    //| DivPoints
-    | DiscountedDivPoints
+        //| DivPoints
+        | DiscountedDivPoints
     //| Yield
 
     type DividendErr =
-    | NoData of Index * DateTime
-    | DiscountRateNegative of Index * DateTime * DateTime
+        | NoData of Index * DateTime
+        | DiscountRateNegative of Index * DateTime * DateTime
 
 
     type IDividendIndex =
         inherit IMarketData
-        abstract member Index: Index
-        abstract member GetDiv: DividendFormat -> DateTime -> DateTime -> float
-        abstract member GetDivResult: DividendFormat -> DateTime -> DateTime -> Result<float,DividendErr>
+        abstract Index: Index
+        abstract GetDiv: DividendFormat -> DateTime -> DateTime -> float
+        abstract GetDivResult: DividendFormat -> DateTime -> DateTime -> Result<float, DividendErr>

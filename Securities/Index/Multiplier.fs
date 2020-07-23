@@ -6,10 +6,10 @@ module Multiplier =
     open FinanceLib.Underlying.Index
 
     type Multiplier =
-    | Custom of float
-    | IndexStandard
+        | Custom of float
+        | IndexStandard
 
-    let getMultiplierFromIndex (index: Index) = function
+    let getMultiplierFromIndex (index: Index) =
+        function
         | Custom i -> i
         | IndexStandard -> index.StandardMultiplier
-        

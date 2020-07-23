@@ -12,10 +12,4 @@ open FinanceLib.Tools
 [<AutoOpen>]
 module PortfolioTypes =
 
-    type HoldingTrades = {
-        Holding: IHolding
-        Trades: Trades
-    }
-
-
-
+    type HoldingTrades = { Holding: IHolding; Trades: Trades }

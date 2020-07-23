@@ -10,14 +10,13 @@ open FinanceLib.Tools
 
 module F =
 
-    
-    let calcFairValue (f: F) =
-           1.
+
+    let calcFairValue (f: F) = 1.
 
 
-    type BlackScholesF (f: F, div: Dividends, ir: InterestRate, repo: RepoRate) =
+    type BlackScholesF(f: F, div: Dividends, ir: InterestRate, repo: RepoRate) =
         let fair = calcFairValue f
-        
+
         interface IPricingF with
             member _.Name = "Black Scholes - Listed Future"
             member _.F = f
@@ -27,13 +26,4 @@ module F =
             member _.Fair = fair, (f :> ISecurity).Currency
             member _.Delta(qty) = if qty >= 0. then 1. else 0.
             member _.DeltaLC qty = fair, (f :> ISecurity).Currency
-            //member __.SecurityType = SecurityType.F
-
-
-
-   
-
-
-
-
-
+//member __.SecurityType = SecurityType.F
