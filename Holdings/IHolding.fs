@@ -14,6 +14,6 @@ module IHolding =
         abstract member Security: Security
         abstract member MarketDataEnv: MarketDataEnv
         abstract member PricingEngine: IPricingEngine
-        abstract member FxPair: FxPair
+        abstract member Currency: Currency
         abstract member Account: string option
         abstract member Trader: string option
