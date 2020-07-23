@@ -24,7 +24,7 @@ module F =
             member _.Currency = index.Currency
 
         member _.Expiry = expiry
-        member _.ExpiryTime = expiryType
+        member _.ExpiryType = expiryType
 
         member _.Multiplier =
             Multiplier.getMultiplierFromIndex index mult

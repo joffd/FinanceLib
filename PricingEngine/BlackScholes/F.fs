@@ -10,9 +10,10 @@ open FinanceLib.Tools
 
 module F =
 
-
-    let calcFairValue (f: F) = 1.
-
+    
+    
+    let private calcFairValue (discDiv: float) (iryield: float) (repoyield: float) (f: F) (now: DateTime) = 
+        let timeToExp = DateTime.calcYearFracBetween now f.Expiry
 
     type BlackScholesF(f: F, div: Dividends, ir: InterestRate, repo: RepoRate) =
         let fair = calcFairValue f
@@ -26,4 +27,3 @@ module F =
             member _.Fair = fair, (f :> ISecurity).Currency
             member _.Delta(qty) = if qty >= 0. then 1. else 0.
             member _.DeltaLC qty = fair, (f :> ISecurity).Currency
-

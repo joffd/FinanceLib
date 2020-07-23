@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <Compile Include="Filter\DateTime.fs" />
+    <Compile Include="DateTime.fs" />
     <Compile Include="Calendar.fs" />
   </ItemGroup>
 
