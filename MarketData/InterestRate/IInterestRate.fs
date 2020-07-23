@@ -10,8 +10,8 @@ module IInterestRate =
 
     type InterestRateErr = NoData of Underlying
 
-    type IInterestRateIndex =
+    type IInterestRate =
         inherit IMarketData
-        abstract Index: Index
+
         abstract GetIR: InterestRateFormat -> DateTime -> DateTime -> float
         abstract GetIRResult: InterestRateFormat -> DateTime -> DateTime -> Result<float, DividendErr>

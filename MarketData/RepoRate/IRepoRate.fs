@@ -10,8 +10,8 @@ module IRepoRate =
 
     type RepoRateErr = NoData of Underlying
 
-    type IRepoRateIndex =
+    type IRepoRate =
         inherit IMarketData
-        abstract Index: Index
+
         abstract GetIR: RepoRateFormat -> DateTime -> DateTime -> float
         abstract GetIRResult: RepoRateFormat -> DateTime -> DateTime -> Result<float, RepoRateErr>

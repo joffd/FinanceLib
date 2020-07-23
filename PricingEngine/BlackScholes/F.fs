@@ -10,10 +10,16 @@ open FinanceLib.Tools
 
 module F =
 
-    
-    
-    let private calcFairValue (discDiv: float) (iryield: float) (repoyield: float) (f: F) (now: DateTime) = 
-        let timeToExp = DateTime.calcYearFracBetween now f.Expiry
+
+
+    let private calcFairValue (discDiv: float) (iryield: float) (repoyield: float) (f: F) (now: DateTime) (spot: float) =
+
+        let timeToExp =
+            DateTime.calcYearFracBetween now f.Expiry
+
+        spot
+        * discDiv
+        * exp ((-iryield + repoyield) * timeToExp)
 
     type BlackScholesF(f: F, div: Dividends, ir: InterestRate, repo: RepoRate) =
         let fair = calcFairValue f

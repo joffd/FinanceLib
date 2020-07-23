@@ -6,12 +6,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="MarketDataTypes.fs" />
     <Compile Include="Common.fs" />
     <Compile Include="Rates.fs" />
+    <Compile Include="IMarketData.fs" />
     <Compile Include="Dividends\IDividends.fs" />
     <Compile Include="InterestRate\IInterestRate.fs" />
     <Compile Include="RepoRate\IRepoRate.fs" />
+    <Compile Include="MarketDataTypes.fs" />
   </ItemGroup>
 
   <ItemGroup>

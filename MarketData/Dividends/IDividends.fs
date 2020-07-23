@@ -5,8 +5,10 @@ open FinanceLib.Underlying
 
 
 [<AutoOpen>]
-module IDividends =
+module IDividend =
 
+    type UnderlyingWithDIv = 
+        | Index of Index
     //let fromDivPtsToDiscountedDivPts (ir: InterestRate) (divPts: DateTime -> DateTime -> float)
     type DividendFormat =
         //| DivPoints
@@ -18,8 +20,8 @@ module IDividends =
         | DiscountRateNegative of Index * DateTime * DateTime
 
 
-    type IDividendIndex =
+    type IDividend =
         inherit IMarketData
-        abstract Index: Index
+        //abstract Index: Index
         abstract GetDiv: DividendFormat -> DateTime -> DateTime -> float
         abstract GetDivResult: DividendFormat -> DateTime -> DateTime -> Result<float, DividendErr>

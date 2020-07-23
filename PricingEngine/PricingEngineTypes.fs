@@ -4,7 +4,7 @@ open System
 open FinanceLib.Underlying
 open FinanceLib.MarketData
 open FinanceLib.Security.Index
-open FinanceLib.Hol
+
 
 [<AutoOpen>]
 module PricingEngineTypes =
@@ -18,15 +18,15 @@ module PricingEngineTypes =
 
     type IPricingEngine =
         abstract Name: string
-        //abstract Fair: float * Currency
-        //abstract Delta: float -> float
-        //abstract DeltaLC: float -> float * Currency
+    //abstract Fair: float * Currency
+    //abstract Delta: float -> float
+    //abstract DeltaLC: float -> float * Currency
     //abstract member SecurityType: SecurityType
 
 
     type IPricingF =
         inherit IPricingEngine
-        abstract Holding: HoldingF
+//abstract Holding: HoldingF
 //abstract Div: Dividends
 //abstract IR: InterestRate
 //abstract Repo: RepoRate

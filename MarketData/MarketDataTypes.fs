@@ -20,24 +20,21 @@ module MarketDataTypes =
 
     type RepoRate = ContCompounded of (DateTime -> DateTime -> float)
 
-    type MarketData =
-        | Div of Dividends
-        | IR of InterestRate
-        | Repo of RepoRate
 
-    type MarketDataNeeded =
+    type MarketDataType =
         | Div of Index
         | IR of Currency
         | Repo of Index
 
-    type Source = Index of Index
+    //type Source = Index of Index
 
 
 
-    type MarketDataEnv = Set<MarketDataNeeded>
+    type MarketData =
+        | Div of IDividend.IDividend
+        | IR of IInterestRate.IInterestRate
+        | Repo of IRepoRate.IRepoRate
 
-    type IMarketData =
-        interface
-        end
+    type MarketDataEnv = Map<MarketDataType, MarketData>
 //abstract member Underlying: Source
 //end

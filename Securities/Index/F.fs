@@ -17,9 +17,9 @@ module F =
 
             member _.MarketDataRequired =
                 Set.ofList
-                    ([ MarketDataNeeded.Div index
-                       MarketDataNeeded.IR index.Currency
-                       MarketDataNeeded.Repo index ])
+                    ([ MarketDataType.Div index
+                       MarketDataType.IR index.Currency
+                       MarketDataType.Repo index ])
 
             member _.Currency = index.Currency
 

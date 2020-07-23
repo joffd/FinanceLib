@@ -12,5 +12,5 @@ module ISecurity =
 
     type ISecurity =
         abstract Underlying: Underlying
-        abstract MarketDataRequired: Set<MarketDataNeeded>
+        abstract MarketDataRequired: Set<MarketDataType>
         abstract Currency: Currency
