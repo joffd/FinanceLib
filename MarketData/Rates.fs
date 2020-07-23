@@ -3,7 +3,13 @@
 
 module Rates =
 
-    type CompoundedConv =
+    type CompoundedFreq =
     | Continuous
+    | SemiAnnual
+    | Quaterly
+    | Monthly
+    | Custom of float
+
+
     
 

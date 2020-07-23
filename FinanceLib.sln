@@ -24,9 +24,11 @@ Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "PricingEngine", "PricingEng
 EndProject
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Portfolio", "Portfolio\Portfolio.fsproj", "{E26DFB15-3CE8-4F99-B0B5-B49844B4C649}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Trade", "Trade\Trade.fsproj", "{14706F64-2D8D-40BD-99F2-02A4A6103027}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Trade", "Trade\Trade.fsproj", "{14706F64-2D8D-40BD-99F2-02A4A6103027}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Trade.NUnitTests", "Trade.NUnitTests\Trade.NUnitTests.fsproj", "{2528A0D9-E290-47A0-9304-DDDC45E3D6DE}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Trade.NUnitTests", "Trade.NUnitTests\Trade.NUnitTests.fsproj", "{2528A0D9-E290-47A0-9304-DDDC45E3D6DE}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Math", "Math\Math.fsproj", "{B58D4DBE-5BE1-4C08-BC27-8E0793A7C400}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -74,6 +76,10 @@ Global
 		{2528A0D9-E290-47A0-9304-DDDC45E3D6DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2528A0D9-E290-47A0-9304-DDDC45E3D6DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2528A0D9-E290-47A0-9304-DDDC45E3D6DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B58D4DBE-5BE1-4C08-BC27-8E0793A7C400}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B58D4DBE-5BE1-4C08-BC27-8E0793A7C400}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B58D4DBE-5BE1-4C08-BC27-8E0793A7C400}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B58D4DBE-5BE1-4C08-BC27-8E0793A7C400}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
