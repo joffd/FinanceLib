@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="IHolding.fs" />
+    <Compile Include="Holding.fs" />
     <Compile Include="Index\HoldingF.fs" />
   </ItemGroup>
 

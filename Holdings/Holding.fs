@@ -8,12 +8,14 @@ open FinanceLib.PricingEngine
 
 
 [<AutoOpen>]
-module IHolding =
+module Holding =
 
-    type IHolding =
-        abstract Security: Security
+    [<AbstractClass>]
+    type Holding() =
+        abstract Security: ISecurity
         abstract MarketDataEnv: MarketDataEnv
         abstract PricingEngine: IPricingEngine
         abstract Currency: Currency
         abstract Account: string option
         abstract Trader: string option
+        member h.GetMarketData(mdt: MarketDataType) = h.MarketDataEnv.TryFind(mdt)
