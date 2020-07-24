@@ -7,8 +7,7 @@ open FinanceLib.Underlying
 [<AutoOpen>]
 module IDividend =
 
-    type UnderlyingWithDIv = 
-        | Index of Index
+    type UnderlyingWithDIv = Index of Index
     //let fromDivPtsToDiscountedDivPts (ir: InterestRate) (divPts: DateTime -> DateTime -> float)
     type DividendFormat =
         //| DivPoints

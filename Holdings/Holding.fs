@@ -18,4 +18,4 @@ module Holding =
         abstract Currency: Currency
         abstract Account: string option
         abstract Trader: string option
-        member h.GetMarketData(mdt: MarketDataType) = h.MarketDataEnv.TryFind(mdt)
+        member h.GetMarketData(mdt: MarketDataType) = h.MarketDataEnv |> Map.tryFind mdt
