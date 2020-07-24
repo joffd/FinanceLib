@@ -17,7 +17,6 @@ module HoldingF =
                   ?account: string,
                   ?trader: string) =
 
-
         inherit Holding()
         with
             override h.Security = f :> ISecurity
