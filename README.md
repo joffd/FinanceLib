@@ -6,4 +6,4 @@ FinanceLib is a project I am working to deliver an Open Source platform for Back
 The code will be mainly written in F# (.NET Core) with examples of usage written both in F# and C#.
 
 ## Updates
-For now the repository remains private as it is still in its very early stage but I hope to release some code here early July 2020!
+For now the repository remains private as it is still in its very early stage but I hope to release some code here early July 2020 and some documentation by late August 2020.
