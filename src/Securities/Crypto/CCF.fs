@@ -8,27 +8,22 @@ open FinanceLib.Security.Index
 open Microsoft.Extensions.Logging
 
 [<AutoOpen>]
-module CP =
+module CCF =
 
-    type CP(logger: ILogger, index: Index, mult: Multiplier) =
+    type CCF(logger: ILogger, index: TokenCurrency, expiry: DateTime, expiryType: ExpiryFormula, mult: Multiplier) =
 
         interface ISecurity with
             member _.ILogger = logger
-            member _.Underlying = Underlying.Index index
+            member _.Underlying = Underlying.TokenCurrency index
 
-            member _.MarketDataRequired =
-                Set.ofList
-                    ([ MarketDataType.Div index
-                       MarketDataType.IR index.Currency
-                       MarketDataType.Repo index ])
+            member _.MarketDataRequired = Set.ofList ([])
 
-            member _.Currency = index.Currency
+            member _.Currency = index.Base
 
         member _.Expiry = expiry
         member _.ExpiryType = expiryType
 
-        member _.Multiplier =
-            Multiplier.getMultiplierFromIndex index mult
+        member _.Multiplier = mult
 
         member x.IsExpired(now: DateTime) = now > x.Expiry
 

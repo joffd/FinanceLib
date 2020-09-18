@@ -9,8 +9,9 @@
     <Compile Include="Exchange.fs" />
     <Compile Include="Currency.fs" />
     <Compile Include="FxPair.fs" />
-    <Compile Include="Crypto.fs" />
     <Compile Include="Index.fs" />
+    <Compile Include="Cryptos\Crypto.fs" />
+    <Compile Include="Cryptos\TokenCurrency.fs" />
     <Compile Include="Underlying.fs" />
   </ItemGroup>
 

@@ -3,7 +3,7 @@
 [<AutoOpen>]
 module Multiplier =
     open System
-    open FinanceLib.Underlying.Index
+    open FinanceLib.Underlying
 
     type Multiplier =
         | Custom of float

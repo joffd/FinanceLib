@@ -5,7 +5,7 @@
 type Underlying =
     //| Currency of Currency
     //| Index of Index
-    | Token of Token
+    | TokenCurrency of TokenCurrency
 
 module Underlying =
 
@@ -13,4 +13,4 @@ module Underlying =
         function
         //| Currency c -> c
         //| Index i -> i.Currency
-        | Token _ -> USD
+        | TokenCurrency t -> t.Base

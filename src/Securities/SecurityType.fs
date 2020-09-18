@@ -8,5 +8,5 @@ open FinanceLib.Security.Crypto
 module SecurityType =
 
     type Security =
-        | CF of CF
-        | CP of CP
+        | CCF of CCF
+        | CCP of CCP

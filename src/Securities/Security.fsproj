@@ -8,8 +8,8 @@
     <Compile Include="ISecurity.fs" />
     <Compile Include="Crypto\Expiry.fs" />
     <Compile Include="Crypto\Multiplier.fs" />
-    <Compile Include="Crypto\CP.fs" />
-    <Compile Include="Crypto\CF.fs" />
+    <Compile Include="Crypto\CCP.fs" />
+    <Compile Include="Crypto\CCF.fs" />
     <Compile Include="SecurityType.fs" />
   </ItemGroup>
 
@@ -20,7 +20,6 @@
   <ItemGroup>
     <ProjectReference Include="..\MarketData\MarketData.fsproj" />
     <ProjectReference Include="..\Tools\Tools.fsproj" />
-    <ProjectReference Include="..\Underlyings\Underlyings.fsproj" />
     <ProjectReference Include="..\Underlying\Underlying.fsproj" />
   </ItemGroup>
 
