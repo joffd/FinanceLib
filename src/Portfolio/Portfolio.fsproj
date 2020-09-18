@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="PortfolioTypes.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="3.1.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Holdings\Holding.fsproj" />
+    <ProjectReference Include="..\MarketData\MarketData.fsproj" />
+    <ProjectReference Include="..\PricingEngine\PricingEngine.fsproj" />
+    <ProjectReference Include="..\Securities\Security.fsproj" />
+    <ProjectReference Include="..\Tools\Tools.fsproj" />
+    <ProjectReference Include="..\Trade\Trade.fsproj" />
+    <ProjectReference Include="..\Underlyings\Underlyings.fsproj" />
+  </ItemGroup>
+
+</Project>

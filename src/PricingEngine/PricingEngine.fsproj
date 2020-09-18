@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="PricingEngineTypes.fs" />
+    <Compile Include="BlackScholes\BlackScholes.fs" />
+    <Compile Include="BlackScholes\F.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="3.1.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MarketData\MarketData.fsproj" />
+    <ProjectReference Include="..\Securities\Security.fsproj" />
+    <ProjectReference Include="..\Tools\Tools.fsproj" />
+    <ProjectReference Include="..\Underlyings\Underlyings.fsproj" />
+  </ItemGroup>
+
+</Project>
